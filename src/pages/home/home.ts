@@ -6,6 +6,7 @@ import { Promotion } from "../../shared/promotion";
 import { PromotionProvider } from "../../providers/promotion/promotion";
 import { Leader } from "../../shared/leader";
 import { LeaderProvider } from "../../providers/leader/leader";
+import { FavoriteProvider } from "../../providers/favorite/favorite";
 
 @Component({
   selector: "page-home",
@@ -24,6 +25,8 @@ export class HomePage implements OnInit {
     private dishservice: DishProvider,
     private promotionservice: PromotionProvider,
     private leaderservice: LeaderProvider,
+    private favoriteService: FavoriteProvider,
+
     @Inject("baseURL") public baseURL
   ) {}
 
